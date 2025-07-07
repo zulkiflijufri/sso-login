@@ -11,6 +11,7 @@ class MasterUser extends Authenticatable
     use HasFactory;
     use HasApiTokens;
 
+    protected $connection = 'erk';
     protected $table = 'master_user';
 
     public function isPegawai()
